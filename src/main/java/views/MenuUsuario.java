@@ -6,13 +6,10 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import javax.swing.ImageIcon;
-import javax.swing.JButton;
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.event.ActionEvent;
 import java.awt.Toolkit;
 import javax.swing.SwingConstants;
 import java.awt.event.MouseMotionAdapter;
@@ -238,12 +235,12 @@ public class MenuUsuario extends JFrame {
 	    contentPane.add(lblNewLabel_3_2);
 	}
 	
-	private void headerMousePressed(java.awt.event.MouseEvent evt) {
+	private void headerMousePressed(MouseEvent evt) {
         xMouse = evt.getX();
         yMouse = evt.getY();
     }//GEN-LAST:event_headerMousePressed
 
-    private void headerMouseDragged(java.awt.event.MouseEvent evt) {
+    private void headerMouseDragged(MouseEvent evt) {
         int x = evt.getXOnScreen();
         int y = evt.getYOnScreen();
         this.setLocation(x - xMouse, y - yMouse);
